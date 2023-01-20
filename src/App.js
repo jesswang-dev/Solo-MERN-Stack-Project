@@ -1,16 +1,15 @@
 import React, {Component} from "react";
 import "./App.css";
+import MainContainer from './Component/MainContainer';
+import SubmitContainer from "./Component/SubmitContainer";
 
 class App extends Component{
   render(){
     return(
       <div className="App">
-        Habit Tracker: 
-        <div className="Habit">
-          <input type="checkbox" id="habit" name="habit" 
-        value="Reading" />
-        Reading
-      </div>
+        <h1>Habit Tracker</h1>
+        <MainContainer />
+        <SubmitContainer />
       </div>
     );
   }
